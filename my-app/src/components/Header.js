@@ -11,10 +11,7 @@ function Header() {
         <div className="container flex flex-col mx-auto bg-primary">
           <div className="relative flex flex-wrap items-center justify-between w-full  group py-7 shrink-0">
             <div>
-              <img
-                className="h-8"
-                src="https://raw.githubusercontent.com/Loopple/loopple-public-assets/main/motion-tailwind/img/logos/logo-nav-0.png"
-              />
+              <img className="h-8" src="./public/img/HowStark.png" />
             </div>
             <div className="items-center justify-between hidden gap-12 text-black md:flex">
               <a
@@ -32,23 +29,32 @@ function Header() {
             </div>
 
             <form>
-              <div className="group bg-white border-1 px-4 mx-4 py-1 border-blue">
+              <div className="group  bg-gradient border-1 px-10 mx-4 py-2 ">
                 <input
                   type="text "
-                  class="opacity-0 group-hover:opacity-100 bg-transparent border-1 border-blue focus:outline-none w-24 lg:w-44 transition duration-500"
+                  className="opacity-0 from-purple text-sm  to-blue rounded-[30px] shadow border border-t-blue border-l-blue border-b-purple border-r-purple border-opacity-50 group-hover:opacity-100 bg-transparent border-1 border-blue focus:outline-none w-40 lg:w-44 transition duration-500"
                 />
-                <button class="-ml-4 group-hover:ml-0 duration-500">
-                  <i class="fas fa-search group-hover:text-blue transition duration-500"></i>
+                <button className="-ml-4 group-hover:ml-0 duration-500 w-6 h-6">
+                  <i className="fas fa-search text-purple group-hover:text-blue transition duration-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="0.75em"
+                      viewBox="0 0 512 512"
+                      fill="white"
+                    >
+                      <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                    </svg>
+                  </i>
                 </button>
               </div>
             </form>
 
-            <div className="items-center gap-8 md:flex">
-              <button className="flex items-center rounded-xl  px-8 py-2 text-base     bg-gradient-to-r from-purple to-blue   hover:to-blue hover:from-darkpurple text-darkpurple hover:text-gray transition duration-300">
+            <div className="items-center gap-8 sm:hidden md:flex">
+              <button className="flex items-center rounded-[30px]  px-8 py-2 text-base  sm:hidden   bg-gradient-to-r from-purple to-blue   hover:to-blue hover:from-darkpurple text-darkpurple hover:text-gray transition duration-300">
                 Search
               </button>
 
-              <button className="flex items-center px-14 py-2 text-sm  md:text-sm  font-bold md:px-1 md:py-2   bg-gradient-to-r from-purple to-blue rounded-xl bg-primary hover:to-blue hover:from-darkpurple hover:text-gray transition duration-300">
+              <button className="flex items-center px-16 py-2 text-sm  md:text-sm border-1 border sm:hidden  rounded-[30px] m-auto border-t-blue border-l-blue border-b-purple border-r-purple bg-black  font-bold md:px-1 md:py-2  bg-primary hover:to-blue hover:from-darkpurple hover:text-gray transition duration-300">
                 Connect Wallet
               </button>
             </div>

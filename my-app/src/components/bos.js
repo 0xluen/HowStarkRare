@@ -14,6 +14,10 @@ function Search() {
         </div>
       </div>
     </div>
+
+<div className="w-[355px] hidden h-[57px]  from-purple  to-blue rounded-[30px] shadow border border-t-blue border-l-blue border-b-purple border-r-purple border-opacity-50">
+<div className="w-6 h-6 relative"></div>
+</div>
   );
 }
 
