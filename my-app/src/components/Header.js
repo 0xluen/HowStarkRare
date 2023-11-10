@@ -9,7 +9,7 @@ function Header() {
           href="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/motion-tailwind.css"
         />
         <div className="container flex flex-col mx-auto bg-primary">
-          <div className="relative flex flex-wrap items-center justify-between w-full bg-white group py-7 shrink-0">
+          <div className="relative flex flex-wrap items-center justify-between w-full  group py-7 shrink-0">
             <div>
               <img
                 className="h-8"
@@ -21,25 +21,13 @@ function Header() {
                 className="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
                 href="javascript:void(0)"
               >
-                Product
+                Home
               </a>
               <a
-                className="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+                className="text-sm font-normal text-dark-grey-700 text-white hover:text-dark-grey-900"
                 href="javascript:void(0)"
               >
-                Features
-              </a>
-              <a
-                className="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
-                href="javascript:void(0)"
-              >
-                Pricing
-              </a>
-              <a
-                className="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
-                href="javascript:void(0)"
-              >
-                Company
+                Collection
               </a>
             </div>
             <div className="items-center hidden gap-8 md:flex">
