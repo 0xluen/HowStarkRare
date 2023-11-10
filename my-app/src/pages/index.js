@@ -6,6 +6,7 @@ function index() {
   return (
     <div>
       <Header />
+
       <Footer />
     </div>
   );

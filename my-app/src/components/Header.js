@@ -18,24 +18,38 @@ function Header() {
             </div>
             <div className="items-center justify-between hidden gap-12 text-black md:flex">
               <a
-                className="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+                className="text-sm font-normal  hover:text-dark-grey-900 text-transparent bg-clip-text bg-gradient-to-r from-purple to-blue"
                 href="javascript:void(0)"
               >
                 Home
               </a>
               <a
-                className="text-sm font-normal text-dark-grey-700 text-white hover:text-dark-grey-900"
+                className="text-sm font-normal text-white hover:text-blue"
                 href="javascript:void(0)"
               >
                 Collection
               </a>
             </div>
-            <div className="items-center hidden gap-8 md:flex">
-              <button className="flex items-center text-sm font-normal text-gray-800 hover:text-gray-900 transition duration-300">
-                Log In
+
+            <form>
+              <div className="group bg-white border-1 px-4 mx-4 py-1 border-blue">
+                <input
+                  type="text "
+                  class="opacity-0 group-hover:opacity-100 bg-transparent border-1 border-blue focus:outline-none w-24 lg:w-44 transition duration-500"
+                />
+                <button class="-ml-4 group-hover:ml-0 duration-500">
+                  <i class="fas fa-search group-hover:text-blue transition duration-500"></i>
+                </button>
+              </div>
+            </form>
+
+            <div className="items-center gap-8 md:flex">
+              <button className="flex items-center rounded-xl  px-8 py-2 text-base     bg-gradient-to-r from-purple to-blue   hover:to-blue hover:from-darkpurple text-darkpurple hover:text-gray transition duration-300">
+                Search
               </button>
-              <button className="flex items-center px-4 py-2 text-sm font-bold rounded-xl bg-purple-blue-100 text-purple-blue-600 hover:bg-purple-blue-600 hover:text-white transition duration-300">
-                Sign Up
+
+              <button className="flex items-center px-14 py-2 text-sm  md:text-sm  font-bold md:px-1 md:py-2   bg-gradient-to-r from-purple to-blue rounded-xl bg-primary hover:to-blue hover:from-darkpurple hover:text-gray transition duration-300">
+                Connect Wallet
               </button>
             </div>
             <button
@@ -57,29 +71,18 @@ function Header() {
             </button>
             <div className="absolute flex md:hidden transition-all duration-300 ease-in-out flex-col items-start shadow-main justify-center w-full gap-3 overflow-hidden bg-white max-h-0 group-[.open]:py-4 px-4 rounded-2xl group-[.open]:max-h-64 top-full">
               <a
-                className="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+                className="text-sm font-normal  hover:text-dark-grey-900 text-transparent bg-clip-text bg-gradient-to-r from-purple to-blue"
                 href="javascript:void(0)"
               >
-                Product
+                Home
               </a>
               <a
-                className="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
+                className="text-sm font-normal text-white hover:text-blue"
                 href="javascript:void(0)"
               >
-                Features
+                Collection
               </a>
-              <a
-                className="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
-                href="javascript:void(0)"
-              >
-                Pricing
-              </a>
-              <a
-                className="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
-                href="javascript:void(0)"
-              >
-                Company
-              </a>
+
               <button className="flex items-center text-sm font-normal text-black">
                 Log In
               </button>
