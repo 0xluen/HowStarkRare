@@ -1,49 +1,61 @@
 import React from "react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 function Home() {
   return (
     <>
       <Header />
 
-      {/* asıl  */}
-      <section className="text-gray-600 body-font">
+      {/*1. kısım  */}
+      <section className=" text-gray body-font">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="title-font sm:text-4xl text-6xl mb-4 font-medium text-gray-900">
-              Discover Rare NFTs Collections
+            <h1 className="title-font sm:text-4xl text-6xl mb-4 font-medium text-white">
+              Discover Rare {""}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple to-blue">
+                NFTs
+              </span>
             </h1>
-            <p className="mb-8 leading-relaxed">
+            <h2 className="title-font sm:text-4xl text-6xl font-medium text-white">
+              Collections
+            </h2>
+
+            <p className="mb-8 mt-8 ml-0 text-left leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Vestibulum aliquet lorem sit amet mauris ornare varius. Fusce
               lacinia luctus elementum
             </p>
-            <div className="flex w-full md:justify-start justify-center items-end">
-              <div className="relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
-                <button className="inline-flex bg-gradient-to-r from-purple to-blue   hover:to-blue hover:from-darkpurple text-darkpurple hover:text-gray  bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                  Button
-                </button>
-              </div>
+            <div className=" flex w-full md:justify-start items-end md:w-full lg:w-full xl:w-1/2">
+              <button class=" bg-gradient-to-r from-purple to-blue   hover:to-blue hover:from-darkpurple text-darkpurple bg-indigo-500 border-0 py-3 px-20 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                EXPLORE
+              </button>
             </div>
 
             <div className="flex lg:flex-row md:flex-col">
-              <button className="bg-gray-100 flex flex-col py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-gray-200 focus:outline-none">
-                <h2 className="title-font font-medium text-3xl text-gray-900">
-                  1.8K
+              <button className=" flex flex-col py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-gray-200 focus:outline-none">
+                <h2 className="title-font font-medium text-3xl text-white">
+                  1500K
                 </h2>
-                <p className="leading-relaxed">Collections</p>
+                <p className="leading-relaxed border-b-[0.5px] border-blue ">
+                  Collections
+                </p>
               </button>
-              <button className="bg-gray-100 flex flex-col py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-gray-200 focus:outline-none">
-                <h2 className="title-font font-medium text-3xl text-gray-900">
-                  1.8K
+              <button className=" flex flex-col py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-gray-200 focus:outline-none">
+                <h2 className="title-font font-medium text-3xl text-white">
+                  2.2M
                 </h2>
-                <p className="leading-relaxed">Collections</p>
+                <p className="leading-relaxed border-b-[0.5px] border-blue ">
+                  Items
+                </p>
               </button>
-              <button className="bg-gray-100 flex flex-col py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-gray-200 focus:outline-none">
-                <h2 className="title-font font-medium text-3xl text-gray-900">
-                  1.8K
+              <button className=" flex flex-col py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-gray-200 focus:outline-none">
+                <h2 className="title-font font-medium text-3xl text-white">
+                  22K
                 </h2>
-                <p className="leading-relaxed">Collections</p>
+                <p className="leading-relaxed border-b-[0.25px] border-blue ">
+                  Owners
+                </p>
               </button>
             </div>
           </div>
@@ -57,152 +69,336 @@ function Home() {
         </div>
       </section>
 
-      <section className="text-gray-600 body-font">
+      {/* tablo */}
+      <section className="text-gray body-font">
         <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray">
+          <div className="flex flex-col w-full text-left">
+            <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-white">
               Top 50 Collections
             </h1>
           </div>
-          <div>
-            <section className="text-gray  mt-0 body-font">
-              <div className="container px-5 py-24 mx-auto">
-                <div className="lg:w-2/3 w-full mx-auto overflow-auto">
-                  <table className="table-fixed w-full text-left whitespace-no-wrap">
-                    <thead>
-                      <tr>
-                        <th className="px-4 py-3 title-font tracking-wider font-medium text-gray text-sm bg-gray-800 rounded-tl rounded-bl">
-                          # COLLECTİONS
-                        </th>
-                        <th className="px-4 py-3 title-font tracking-wider font-medium text-gray text-sm bg-gray-800">
-                          FLOOR PRİCE
-                        </th>
-                        <th className="px-4 py-3 title-font tracking-wider font-medium text-gray text-sm ">
-                          ITEMS
-                        </th>
-                        <th className="px-4 py-3 title-font tracking-wider font-medium text-gray text-sm bg-gray-800">
-                          HOLDER
-                        </th>
-                        <th className="px-4 py-3 title-font tracking-wider font-medium text-gray text-sm bg-gray-800">
-                          ONSALE
-                        </th>
-                        <th className="px-4 py-3 title-font tracking-wider font-medium text-gray text-sm  bg-gray-800">
-                          FLOOR MC
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td className="px-4 py-3">
-                          <img
-                            alt="blog"
-                            src="https://dummyimage.com/103x103"
-                            className="w-8 h-8 mb-1 rounded-full flex-shrink-0 object-cover object-center"
-                          />
-                          Start
-                        </td>
-                        <td className="px-4 py-3">0.05</td>
-                        <td className="px-4 py-3">9999</td>
-                        <td className="px-4 py-3">9999</td>
-                        <td className="px-4 py-3">9999</td>
-                        <td className="px-4 py-3">9999</td>
-                      </tr>
-                      <tr>
-                        <td className="px-4 py-3">
-                          <img
-                            alt="blog"
-                            src="https://dummyimage.com/103x103"
-                            className="w-8 h-8 mb-1 rounded-full flex-shrink-0 object-cover object-center"
-                          />
-                          Start
-                        </td>
-                        <td className="px-4 py-3">0.05</td>
-                        <td className="px-4 py-3">9999</td>
-                        <td className="px-4 py-3">9999</td>
-                        <td className="px-4 py-3">9999</td>
-                        <td className="px-4 py-3">9999</td>
-                      </tr>
-                      <tr>
-                        <td className="px-4 py-3">
-                          <img
-                            alt="blog"
-                            src="https://dummyimage.com/103x103"
-                            className="w-8 h-8 mb-1 rounded-full flex-shrink-0 object-cover object-center"
-                          />
-                          Start
-                        </td>
-                        <td className="px-4 py-3">0.05</td>
-                        <td className="px-4 py-3">9999</td>
-                        <td className="px-4 py-3">9999</td>
-                        <td className="px-4 py-3">9999</td>
-                        <td className="px-4 py-3">9999</td>
-                      </tr>
-                      <tr>
-                        <td className="px-4 py-3">
-                          <img
-                            alt="blog"
-                            src="https://dummyimage.com/103x103"
-                            className="w-8 h-8 mb-1 rounded-full flex-shrink-0 object-cover object-center"
-                          />
-                          Start
-                        </td>
-                        <td className="px-4 py-3">0.05</td>
-                        <td className="px-4 py-3">9999</td>
-                        <td className="px-4 py-3">9999</td>
-                        <td className="px-4 py-3">9999</td>
-                        <td className="px-4 py-3">9999</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </section>
+          <div className="lg:w-2/3 w-full mx-auto overflow-auto">
+            <table className="table-auto w-full text-center whitespace-no-wrap">
+              <thead>
+                <tr>
+                  <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm rounded-tl rounded-bl text-left">
+                    <span className="mr-6">#</span>
+                    COLLECTİONS
+                  </th>
+                  <th className="px-4 py-3 title-font tracking-wider font-medium  text-sm  rounded-tl rounded-bl">
+                    FLOOR PRİCE
+                  </th>
+                  <th className="px-4 py-3 title-font tracking-wider font-medium  text-sm  rounded-tl rounded-bl">
+                    ITEMS
+                  </th>
+                  <th className="px-4 py-3 title-font tracking-wider font-medium text-sm ">
+                    HOLDERS
+                  </th>
+                  <th className="px-4 py-3 title-font tracking-wider font-medium  text-sm ">
+                    ONSALE
+                  </th>
+                  <th className="px-4 py-3 title-font tracking-wider font-medium  text-sm">
+                    FLOOR MC
+                  </th>
+                  <th className="w-10 title-font tracking-wider font-medium  text-sm  rounded-tr rounded-br" />
+                </tr>
+              </thead>
+              <tbody className=" border-darkgray border-[1px] divide-solid ">
+                <tr>
+                  <td className="px-4 py-3 title-font  flex items-center tracking-wider font-medium text-gray-900 text-sm rounded-tl rounded-bl text-left">
+                    <span className="mr-6">1</span>
+                    <img
+                      alt="blog"
+                      src="https://dummyimage.com/103x103"
+                      className="w-auto h-8 mb-1 flex-shrink-0 object-cover object-center mr-4"
+                    />
+                    Start
+                  </td>
+                  <td className="px-4 py-3">5 Mb/s</td>
+                  <td className="px-4 py-3">15 GB</td>
+                  <td className="px-4 py-3 text-lg text-gray">Free</td>
+                  <td className="px-4 py-3 text-lg text-gray">Free</td>
+                  <td className="px-4 py-3 text-lg text-gray">Free</td>
+                </tr>
+
+                <tr>
+                  <td className="px-4 py-3 title-font  flex items-center tracking-wider font-medium text-gray-900 text-sm rounded-tl rounded-bl text-left border-t-[0.5px] border-darkgray">
+                    <span className="mr-6">1</span>
+                    <img
+                      alt="blog"
+                      src="https://dummyimage.com/103x103"
+                      className="w-auto h-8 mb-1 flex-shrink-0 object-cover object-center mr-4"
+                    />
+                    Start
+                  </td>
+                  <td className="border-t-[0.5px] border-darkgray px-4 py-3">
+                    25 Mb/s
+                  </td>
+                  <td className="border-t-[0.5px] border-darkgray px-4 py-3">
+                    25 GB
+                  </td>
+                  <td className="border-t-[0.5px] border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                  <td className="border-t-[0.5px] border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 title-font  flex items-center tracking-wider font-medium text-gray-900 text-sm rounded-tl rounded-bl text-left border-t-[0.5px] border-darkgray">
+                    <span className="mr-6">2</span>
+                    <img
+                      alt="blog"
+                      src="https://dummyimage.com/103x103"
+                      className="w-auto h-8 mb-1 flex-shrink-0 object-cover object-center mr-4"
+                    />
+                    Start
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3">
+                    25 Mb/s
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3">
+                    25 GB
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                  <td className="border-t-[0.5px] border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                  <td className="border-t-[0.5px] border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 title-font  flex items-center tracking-wider font-medium text-gray-900 text-sm rounded-tl rounded-bl text-left border-t-[0.5px] border-darkgray">
+                    <span className="mr-6">3</span>
+                    <img
+                      alt="blog"
+                      src="https://dummyimage.com/103x103"
+                      className="w-auto h-8 mb-1 flex-shrink-0 object-cover object-center mr-4"
+                    />
+                    Start
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3">
+                    25 Mb/s
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3">
+                    25 GB
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 title-font  flex items-center tracking-wider font-medium text-gray-900 text-sm rounded-tl rounded-bl text-left border-t-[0.5px] border-darkgray">
+                    <span className="mr-6">4</span>
+                    <img
+                      alt="blog"
+                      src="https://dummyimage.com/103x103"
+                      className="w-auto h-8 mb-1 flex-shrink-0 object-cover object-center mr-4"
+                    />
+                    Start
+                  </td>
+                  <td className="border-t-[0.5px] border-darkgray px-4 py-3">
+                    25 Mb/s
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3">
+                    25 GB
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 title-font  flex items-center tracking-wider font-medium text-gray-900 text-sm rounded-tl rounded-bl text-left border-t-[0.5px] border-darkgray">
+                    <span className="mr-6">5</span>
+                    <img
+                      alt="blog"
+                      src="https://dummyimage.com/103x103"
+                      className="w-auto h-8 mb-1 flex-shrink-0 object-cover object-center mr-4"
+                    />
+                    Start
+                  </td>
+                  <td className="border-t-[0.5px] border-darkgray px-4 py-3">
+                    25 Mb/s
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3">
+                    25 GB
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 title-font  flex items-center tracking-wider font-medium text-gray-900 text-sm rounded-tl rounded-bl text-left border-t-[0.5px] border-darkgray">
+                    <span className="mr-6">6</span>
+                    <img
+                      alt="blog"
+                      src="https://dummyimage.com/103x103"
+                      className="w-auto h-8 mb-1 flex-shrink-0 object-cover object-center mr-4"
+                    />
+                    Start
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3">
+                    25 GB
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 title-font  flex items-center tracking-wider font-medium text-gray-900 text-sm rounded-tl rounded-bl text-left border-t-[0.5px] border-darkgray">
+                    <span className="mr-6">7</span>
+                    <img
+                      alt="blog"
+                      src="https://dummyimage.com/103x103"
+                      className="w-auto h-8 mb-1 flex-shrink-0 object-cover object-center mr-4"
+                    />
+                    Start
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3">
+                    25 Mb/s
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3">
+                    25 GB
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 title-font  flex items-center tracking-wider font-medium text-gray-900 text-sm rounded-tl rounded-bl text-left border-t-[0.5px] border-darkgray">
+                    <span className="mr-6">8</span>
+                    <img
+                      alt="blog"
+                      src="https://dummyimage.com/103x103"
+                      className="w-auto h-8 mb-1 flex-shrink-0 object-cover object-center mr-4"
+                    />
+                    Start
+                  </td>
+                  <td className="border-t-[0.5px] border-darkgray px-4 py-3">
+                    25 Mb/s
+                  </td>
+                  <td className="border-t-[0.5px] border-darkgray px-4 py-3">
+                    25 GB
+                  </td>
+                  <td className="border-t-[0.5px] border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 title-font  flex items-center tracking-wider font-medium text-gray-900 text-sm rounded-tl rounded-bl text-left border-t-[0.5px] border-darkgray">
+                    <span className="mr-6">9</span>
+                    <img
+                      alt="blog"
+                      src="https://dummyimage.com/103x103"
+                      className="w-auto h-8 mb-1 flex-shrink-0 object-cover object-center mr-4"
+                    />
+                    Start
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3">
+                    25 Mb/s
+                  </td>
+                  <td className="border-t-[0.5px] border-darkgray px-4 py-3">
+                    25 GB
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 title-font  flex items-center tracking-wider font-medium text-gray-900 text-sm rounded-tl rounded-bl text-left border-t-[0.5px] border-darkgray">
+                    <span className="mr-4">10</span>
+                    <img
+                      alt="blog"
+                      src="https://dummyimage.com/103x103"
+                      className="w-auto h-8 mb-1 flex-shrink-0 object-cover object-center mr-4"
+                    />
+                    Start
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3">
+                    25 Mb/s
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3">
+                    25 GB
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
+                    $24
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
 
+      {/* card */}
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-              Master Cleanse Reliac Heirloom
-            </h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-              gentrify, subway tile poke farm-to-table. Franzen you probably
-              haven't heard of them man bun deep jianbing selfies heirloom.
-            </p>
-          </div>
           <div className="flex flex-wrap -m-4">
-            <div className="lg:w-1/3 sm:w-1/2 p-4">
-              <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://dummyimage.com/600x360"
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    THE SUBTITLE
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Shooting Stars
-                  </h1>
-                  <p className="leading-relaxed">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="lg:w-1/3 sm:w-1/2 p-4">
+            <div className="lg:w-1/4 sm:w-1/2 p-4">
               <div className="flex relative">
                 <img
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
                   src="https://dummyimage.com/601x361"
                 />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white ">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
                     THE SUBTITLE
                   </h2>
@@ -216,19 +412,19 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/3 sm:w-1/2 p-4">
+            <div className="lg:w-1/4 sm:w-1/2 p-4">
               <div className="flex relative">
                 <img
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://dummyimage.com/603x363"
+                  src="https://dummyimage.com/601x361"
                 />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white ">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
                     THE SUBTITLE
                   </h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    The 400 Blows
+                    The Catalyzer
                   </h1>
                   <p className="leading-relaxed">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
@@ -237,19 +433,14 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/3 sm:w-1/2 p-4">
+            <div className="lg:w-1/4 sm:w-1/2 p-4">
               <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://dummyimage.com/602x362"
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white ">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
                     THE SUBTITLE
                   </h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Neptune
+                    The Catalyzer
                   </h1>
                   <p className="leading-relaxed">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
@@ -258,40 +449,19 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/3 sm:w-1/2 p-4">
+            <div className="lg:w-1/4 sm:w-1/2 p-4">
               <div className="flex relative">
                 <img
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://dummyimage.com/605x365"
+                  src="https://dummyimage.com/601x361"
                 />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white ">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
                     THE SUBTITLE
                   </h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Holden Caulfield
-                  </h1>
-                  <p className="leading-relaxed">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="lg:w-1/3 sm:w-1/2 p-4">
-              <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://dummyimage.com/606x366"
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    THE SUBTITLE
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Alper Kamu
+                    The Catalyzer
                   </h1>
                   <p className="leading-relaxed">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
@@ -304,103 +474,114 @@ function Home() {
         </div>
       </section>
 
+      {/* twitter */}
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-              Master Cleanse Reliac Heirloom
-            </h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-              gentrify, subway tile poke farm-to-table. Franzen you probably
-              haven't heard of them man bun deep jianbing selfies heirloom prism
-              food truck ugh squid celiac humblebrag.
-            </p>
-          </div>
-          <div className="flex flex-wrap -m-4 text-center">
-            <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  className="text-indigo-500 w-12 h-12 mb-3 inline-block"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M8 17l4 4 4-4m-4-5v9" />
-                  <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29" />
-                </svg>
-                <h2 className="title-font font-medium text-3xl text-gray-900">
-                  2.7K
-                </h2>
-                <p className="leading-relaxed">Downloads</p>
+          <div className="flex flex-wrap -m-4">
+            <div className="lg:w-1/5 sm:w-1/2 p-4">
+              <div className="flex relative">
+                <img
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src="https://dummyimage.com/601x361"
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white ">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+                    THE SUBTITLE
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                    The Catalyzer
+                  </h1>
+                  <p className="leading-relaxed">
+                    Photo booth fam kinfolk cold-pressed sriracha leggings
+                    jianbing microdosing tousled waistcoat.
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  className="text-indigo-500 w-12 h-12 mb-3 inline-block"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
-                  <circle cx={9} cy={7} r={4} />
-                  <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75" />
-                </svg>
-                <h2 className="title-font font-medium text-3xl text-gray-900">
-                  1.3K
-                </h2>
-                <p className="leading-relaxed">Users</p>
+            <div className="lg:w-1/5 sm:w-1/2 p-4">
+              <div className="flex relative">
+                <img
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src="https://dummyimage.com/601x361"
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white ">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+                    THE SUBTITLE
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                    The Catalyzer
+                  </h1>
+                  <p className="leading-relaxed">
+                    Photo booth fam kinfolk cold-pressed sriracha leggings
+                    jianbing microdosing tousled waistcoat.
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  className="text-indigo-500 w-12 h-12 mb-3 inline-block"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M3 18v-6a9 9 0 0118 0v6" />
-                  <path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z" />
-                </svg>
-                <h2 className="title-font font-medium text-3xl text-gray-900">
-                  74
-                </h2>
-                <p className="leading-relaxed">Files</p>
+            <div className="lg:w-1/5 sm:w-1/2 p-4">
+              <div className="flex relative">
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white ">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+                    THE SUBTITLE
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                    The Catalyzer
+                  </h1>
+                  <p className="leading-relaxed">
+                    Photo booth fam kinfolk cold-pressed sriracha leggings
+                    jianbing microdosing tousled waistcoat.
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  className="text-indigo-500 w-12 h-12 mb-3 inline-block"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                </svg>
-                <h2 className="title-font font-medium text-3xl text-gray-900">
-                  46
-                </h2>
-                <p className="leading-relaxed">Places</p>
+            <div className="lg:w-1/5 sm:w-1/2 p-4">
+              <div className="flex relative">
+                <img
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src="https://dummyimage.com/601x361"
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white ">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+                    THE SUBTITLE
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                    The Catalyzer
+                  </h1>
+                  <p className="leading-relaxed">
+                    Photo booth fam kinfolk cold-pressed sriracha leggings
+                    jianbing microdosing tousled waistcoat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/5 sm:w-1/2 p-4">
+              <div className="flex relative">
+                <img
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src="https://dummyimage.com/601x361"
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white ">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+                    THE SUBTITLE
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                    The Catalyzer
+                  </h1>
+                  <p className="leading-relaxed">
+                    Photo booth fam kinfolk cold-pressed sriracha leggings
+                    jianbing microdosing tousled waistcoat.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }
