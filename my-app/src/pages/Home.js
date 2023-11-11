@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 function Home() {
   return (
@@ -18,7 +19,7 @@ function Home() {
               </span>
             </h1>
             <h2 className="title-font sm:text-4xl text-6xl font-medium text-white">
-              Collections
+              Collections <img src="./icons/Vector.svg" />
             </h2>
 
             <p className="mb-8 mt-8 ml-0 text-left leading-relaxed">
@@ -504,20 +505,8 @@ function Home() {
                 <img
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://dummyimage.com/601x361"
+                  src="https://s3-alpha-sig.figma.com/img/668e/5d13/668b8fcb35d6cc077fd4bfb8a9b26697?Expires=1700438400&Signature=UrR-KlygzcPdcxtVG5R4h-jRL7xYCaw3yBT3Weah88GJxRl40MCk38gVxn~6NrEnyBQoBn7KW9qPiowtqEuCy1TO7pakmyvc1W3doJ41cmyt~apvFAIZk2kGyRvuniEGQ-l1Sm-tQapIS6-EHkVF7frm3Fk4Y2r-LG5Z28ncZU~kU4uf~Nc4UeYVLzP~o2Cev9MtlJzMEWPEa-V~gNBM91pTeH~a5ou3GU-uhzYVdbzTPV6TrlDMsmuPcKI9cpdfUDgrrSq98JvubaYHWp2PEaOPSmRRsT8JVbgllUwhcbZyaCah2x0ktdD~W1z8Z31FUtluy3ujb2IipcquffJo8Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white ">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    THE SUBTITLE
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    The Catalyzer
-                  </h1>
-                  <p className="leading-relaxed">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
-                  </p>
-                </div>
               </div>
             </div>
             <div className="lg:w-1/5 sm:w-1/2 p-4">
