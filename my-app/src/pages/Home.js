@@ -371,181 +371,369 @@ function Home() {
       </section>
 
       {/* card */}
-      <section className="text-gray-600 body-font">
+      <section className="text-gray-400 bg-gray-900 body-font">
         <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-col w-full text-left">
+            <h1 className="sm:text-4xl text-3xl font-medium title-font mb-5 text-white">
+              Featured Collections
+            </h1>
+          </div>
           <div className="flex flex-wrap -m-4">
-            <div className="lg:w-1/4 sm:w-1/2 p-4">
-              <div className="flex relative">
+            <div className="p-4 md:w-1/3">
+              <div className="h-full border-[1px] border-t-blue border-l-blue border-b-purple border-r-purple  rounded-lg overflow-hidden">
                 <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://dummyimage.com/601x361"
+                  className="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="./img/c1.png"
+                  alt="blog"
                 />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white ">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    THE SUBTITLE
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    The Catalyzer
+                <div className="p-6">
+                  <h1 className="title-font text-xl text-center font-medium text-white mb-3">
+                    Being by Parin Heidari{" "}
+                    <img
+                      className="inline-block align-middle"
+                      src="./icons/blue.svg"
+                    />
                   </h1>
-                  <p className="leading-relaxed">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
-                  </p>
+
+                  <div className="flex justify-center items-center flex-wrap gap-x-4">
+                    <p className="text-sm text-gray flex-1 text-center">
+                      Floor
+                    </p>
+                    <p className="text-sm text-gray flex-1 text-center">
+                      24H Volume
+                    </p>
+                  </div>
+                  <div className="flex justify-center items-center flex-wrap gap-x-4">
+                    <p className="text-sl text-white flex-1 text-center">
+                      0.048 ETH
+                    </p>
+                    <p className="text-xl text-white flex-1 text-center">
+                      0.048 ETH
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/4 sm:w-1/2 p-4">
-              <div className="flex relative">
+            <div className="p-4 md:w-1/3">
+              <div className="h-full border-[1px] border-t-blue border-l-blue border-b-purple border-r-purple  rounded-lg overflow-hidden">
                 <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://dummyimage.com/601x361"
+                  className="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="./img/c2.png"
+                  alt="blog"
                 />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white ">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    THE SUBTITLE
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    The Catalyzer
+                <div className="p-6">
+                  <h1 className="title-font text-xl text-center font-medium text-white mb-3">
+                    Monster Party{" "}
+                    <img
+                      className="inline-block align-middle"
+                      src="./icons/blue.svg"
+                    />
                   </h1>
-                  <p className="leading-relaxed">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
-                  </p>
+
+                  <div className="flex justify-center items-center flex-wrap gap-x-4">
+                    <p className="text-sm text-gray flex-1 text-center">
+                      Floor
+                    </p>
+                    <p className="text-sm text-gray flex-1 text-center">
+                      24H Volume
+                    </p>
+                  </div>
+                  <div className="flex justify-center items-center flex-wrap gap-x-4">
+                    <p className="text-sl text-white flex-1 text-center">
+                      0.048 ETH
+                    </p>
+                    <p className="text-xl text-white flex-1 text-center">
+                      0.048 ETH
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/4 sm:w-1/2 p-4">
-              <div className="flex relative">
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white ">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    THE SUBTITLE
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    The Catalyzer
-                  </h1>
-                  <p className="leading-relaxed">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="lg:w-1/4 sm:w-1/2 p-4">
-              <div className="flex relative">
+
+            <div className="p-4 md:w-1/3">
+              <div className="h-full border-[1px] border-t-blue border-l-blue border-b-purple border-r-purple  rounded-lg overflow-hidden">
                 <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://dummyimage.com/601x361"
+                  className="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="./img/c3.png"
+                  alt="blog"
                 />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white ">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    THE SUBTITLE
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    The Catalyzer
+                <div className="p-6">
+                  <h1 className="title-font text-xl text-center font-medium text-white mb-3">
+                    /// by Snowfro{" "}
+                    <img
+                      className="inline-block align-middle"
+                      src="./icons/blue.svg"
+                    />
                   </h1>
-                  <p className="leading-relaxed">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
-                  </p>
+
+                  <div className="flex justify-center items-center flex-wrap gap-x-4">
+                    <p className="text-sm text-gray flex-1 text-center">
+                      Floor
+                    </p>
+                    <p className="text-sm text-gray flex-1 text-center">
+                      24H Volume
+                    </p>
+                  </div>
+                  <div className="flex justify-center items-center flex-wrap gap-x-4">
+                    <p className="text-sl text-white flex-1 text-center">
+                      0.048 ETH
+                    </p>
+                    <p className="text-xl text-white flex-1 text-center">
+                      0.048 ETH
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
+          <div className="flex mt-8 justify-center">
+            <img className="mr-10 h-10" src="./icons/Left.svg" />
+            <img className="h-10" src="./icons/Right.svg" />
           </div>
         </div>
       </section>
 
       {/* twitter */}
-      <section className="text-gray-600 body-font">
+      <section className="text-gray body-font">
         <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-col w-full text-left">
+            <h1 className="sm:text-4xl text-3xl font-medium title-font mb-5 text-white">
+              Trending Artists
+            </h1>
+          </div>
           <div className="flex flex-wrap -m-4">
             <div className="lg:w-1/5 sm:w-1/2 p-4">
               <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://dummyimage.com/601x361"
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white ">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    THE SUBTITLE
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    The Catalyzer
-                  </h1>
-                  <p className="leading-relaxed">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
-                  </p>
+                <div className="h-full border-[1px] bg-twbg border-t-blue border-l-blue border-b-purple border-r-purple  rounded-lg overflow-hidden">
+                  <img
+                    className="lg:h-48 md:h-36 w-full object-cover object-center"
+                    src="./img/bg-1.png"
+                    alt="blog"
+                  />
+                  <img
+                    src="./icons/jane.svg"
+                    className="absolute top-0 right-0 bottom-0 left-0 m-auto"
+                  />
+                  <div className="p-6">
+                    <h1 className="title-font mt-5 text-xl text-center font-medium text-white mb-3">
+                      Jane Cooper{" "}
+                      <img
+                        className="inline-block align-middle"
+                        src="./icons/blue.svg"
+                      />
+                    </h1>
+
+                    <div className="flex justify-center items-center flex-wrap gap-x-2">
+                      <p className="text-xl text-gray flex-1 text-center">
+                        1.7K
+                      </p>
+                      <p className="text-xl text-gray border-x-green border-y-twbg border-[0.5px] flex-1 text-center">
+                        1.7K
+                      </p>
+                      <p className="text-xl text-gray flex-1 text-center">
+                        1.7K
+                      </p>
+                    </div>
+                    <div className="flex justify-center items-center flex-wrap gap-x-4">
+                      <p className="text-xs text-darkgray flex-1 text-center">
+                        Items
+                      </p>
+                      <p className="text-xs text-darkgray flex-1 text-center">
+                        Items
+                      </p>
+                      <p className="text-xs text-darkgray flex-1 text-center">
+                        Items
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="lg:w-1/5 sm:w-1/2 p-4">
               <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://s3-alpha-sig.figma.com/img/668e/5d13/668b8fcb35d6cc077fd4bfb8a9b26697?Expires=1700438400&Signature=UrR-KlygzcPdcxtVG5R4h-jRL7xYCaw3yBT3Weah88GJxRl40MCk38gVxn~6NrEnyBQoBn7KW9qPiowtqEuCy1TO7pakmyvc1W3doJ41cmyt~apvFAIZk2kGyRvuniEGQ-l1Sm-tQapIS6-EHkVF7frm3Fk4Y2r-LG5Z28ncZU~kU4uf~Nc4UeYVLzP~o2Cev9MtlJzMEWPEa-V~gNBM91pTeH~a5ou3GU-uhzYVdbzTPV6TrlDMsmuPcKI9cpdfUDgrrSq98JvubaYHWp2PEaOPSmRRsT8JVbgllUwhcbZyaCah2x0ktdD~W1z8Z31FUtluy3ujb2IipcquffJo8Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                />
-              </div>
-            </div>
-            <div className="lg:w-1/5 sm:w-1/2 p-4">
-              <div className="flex relative">
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white ">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    THE SUBTITLE
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    The Catalyzer
-                  </h1>
-                  <p className="leading-relaxed">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
-                  </p>
+                <div className="h-full border-[1px] bg-twbg border-t-blue border-l-blue border-b-purple border-r-purple  rounded-lg overflow-hidden">
+                  <img
+                    className="lg:h-48 md:h-36 w-full object-cover object-center"
+                    src="./img/bg-2.png"
+                    alt="blog"
+                  />
+                  <img
+                    src="./icons/jane.svg"
+                    className="absolute top-0 right-0 bottom-0 left-0 m-auto"
+                  />
+                  <div className="p-6">
+                    <h1 className="title-font mt-5 text-xl text-center font-medium text-white mb-3">
+                      Jane Cooper{" "}
+                      <img
+                        className="inline-block align-middle"
+                        src="./icons/blue.svg"
+                      />
+                    </h1>
+
+                    <div className="flex justify-center items-center flex-wrap gap-x-2">
+                      <p className="text-xl text-gray flex-1 text-center">
+                        1.7K
+                      </p>
+                      <p className="text-xl text-gray border-x-green border-y-twbg border-[0.5px] flex-1 text-center">
+                        1.7K
+                      </p>
+                      <p className="text-xl text-gray flex-1 text-center">
+                        1.7K
+                      </p>
+                    </div>
+                    <div className="flex justify-center items-center flex-wrap gap-x-4">
+                      <p className="text-xs text-darkgray flex-1 text-center">
+                        Items
+                      </p>
+                      <p className="text-xs text-darkgray flex-1 text-center">
+                        Items
+                      </p>
+                      <p className="text-xs text-darkgray flex-1 text-center">
+                        Items
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="lg:w-1/5 sm:w-1/2 p-4">
               <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://dummyimage.com/601x361"
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white ">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    THE SUBTITLE
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    The Catalyzer
-                  </h1>
-                  <p className="leading-relaxed">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
-                  </p>
+                <div className="h-full border-[1px] border-t-blue border-l-blue border-b-purple border-r-purple bg-twbg rounded-lg overflow-hidden">
+                  <img
+                    className="lg:h-48 md:h-36 w-full object-cover object-center"
+                    src="./img/bg-3.png"
+                    alt="blog"
+                  />
+                  <img
+                    src="./icons/jane.svg"
+                    className="absolute top-0 right-0 bottom-0 left-0 m-auto"
+                  />
+                  <div className="p-6">
+                    <h1 className="title-font mt-5 text-xl text-center font-medium text-white mb-3">
+                      Jane Cooper{" "}
+                      <img
+                        className="inline-block align-middle"
+                        src="./icons/blue.svg"
+                      />
+                    </h1>
+
+                    <div className="flex justify-center items-center flex-wrap gap-x-2">
+                      <p className="text-xl text-gray flex-1 text-center">
+                        1.7K
+                      </p>
+                      <p className="text-xl text-gray flex-1 border-x-green border-y-twbg border-[0.5px] text-center">
+                        1.7K
+                      </p>
+                      <p className="text-xl text-gray flex-1 text-center">
+                        1.7K
+                      </p>
+                    </div>
+                    <div className="flex justify-center items-center flex-wrap gap-x-4">
+                      <p className="text-xs text-darkgray flex-1 text-center">
+                        Items
+                      </p>
+                      <p className="text-xs text-darkgray flex-1 text-center">
+                        Items
+                      </p>
+                      <p className="text-xs text-darkgray flex-1 text-center">
+                        Items
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="lg:w-1/5 sm:w-1/2 p-4">
               <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://dummyimage.com/601x361"
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white ">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    THE SUBTITLE
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    The Catalyzer
-                  </h1>
-                  <p className="leading-relaxed">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
-                  </p>
+                <div className="h-full border-[1px] bg-twbg border-t-blue border-l-blue border-b-purple border-r-purple  rounded-lg overflow-hidden">
+                  <img
+                    className="lg:h-48 md:h-36 w-full object-cover object-center"
+                    src="./img/bg-4.png"
+                    alt="blog"
+                  />
+                  <img
+                    src="./icons/jane.svg"
+                    className="absolute top-0 right-0 bottom-0 left-0 m-auto"
+                  />
+                  <div className="p-6">
+                    <h1 className="title-font mt-5 text-xl text-center font-medium text-white mb-3">
+                      Jane Cooper{" "}
+                      <img
+                        className="inline-block align-middle"
+                        src="./icons/blue.svg"
+                      />
+                    </h1>
+
+                    <div className="flex justify-center items-center flex-wrap gap-x-2">
+                      <p className="text-xl text-gray flex-1 text-center">
+                        1.7K
+                      </p>
+                      <p className="text-xl text-gray border-x-green border-y-twbg border-[0.5px] flex-1 text-center">
+                        1.7K
+                      </p>
+                      <p className="text-xl text-gray flex-1 text-center">
+                        1.7K
+                      </p>
+                    </div>
+                    <div className="flex justify-center items-center flex-wrap gap-x-4">
+                      <p className="text-xs text-darkgray flex-1 text-center">
+                        Items
+                      </p>
+                      <p className="text-xs text-darkgray flex-1 text-center">
+                        Items
+                      </p>
+                      <p className="text-xs text-darkgray flex-1 text-center">
+                        Items
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/5 sm:w-1/2 p-4">
+              <div className="flex relative">
+                <div className="h-full border-[1px] bg-twbg border-t-blue border-l-blue border-b-purple border-r-purple  rounded-lg overflow-hidden">
+                  <img
+                    className="lg:h-48 md:h-36 w-full object-cover object-center"
+                    src="./img/bg-5.png"
+                    alt="blog"
+                  />
+                  <img
+                    src="./icons/jane.svg"
+                    className="absolute top-0 right-0 bottom-0 left-0 m-auto"
+                  />
+                  <div className="p-6">
+                    <h1 className="title-font mt-5 text-xl text-center font-medium text-white mb-3">
+                      Jane Cooper{" "}
+                      <img
+                        className="inline-block align-middle"
+                        src="./icons/blue.svg"
+                      />
+                    </h1>
+
+                    <div className="flex justify-center items-center flex-wrap gap-x-2">
+                      <p className="text-xl text-gray flex-1 text-center">
+                        1.7K
+                      </p>
+                      <p className="text-xl border-x-green border-y-twbg border-[0.5px] text-gray flex-1 text-center">
+                        1.7K
+                      </p>
+                      <p className="text-xl text-gray flex-1 text-center">
+                        1.7K
+                      </p>
+                    </div>
+                    <div className="flex justify-center items-center flex-wrap gap-x-4">
+                      <p className="text-xs text-darkgray flex-1 text-center">
+                        Items
+                      </p>
+                      <p className="text-xs text-darkgray flex-1 text-center">
+                        Items
+                      </p>
+                      <p className="text-xs text-darkgray flex-1 text-center">
+                        Items
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

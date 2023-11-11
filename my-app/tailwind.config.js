@@ -19,6 +19,8 @@ module.exports = {
       blue: "#5FC4E0",
       darkgray: "#666666",
       footergray: "#7C7878",
+      twbg: "#0B1222",
+      green: "#00FED1",
     },
     extend: {
       backgroundImage: {
