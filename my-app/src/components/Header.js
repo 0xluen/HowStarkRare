@@ -12,7 +12,7 @@ function Header() {
         <div className="container flex flex-col mx-auto bg-primary">
           <div className="relative flex flex-wrap items-center justify-between w-full  group py-7 shrink-0">
             <div>
-              <img className="h-8" src="./img/HowStark.png" />
+              <img className="h-12" src="./img/HowStark.png" />
             </div>
             <div className="items-center justify-between hidden gap-12 text-black md:flex">
               <a

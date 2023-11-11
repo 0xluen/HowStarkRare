@@ -18,8 +18,12 @@ function Home() {
                 NFTs
               </span>
             </h1>
-            <h2 className="title-font sm:text-4xl text-6xl font-medium text-white">
-              Collections <img src="./icons/Vector.svg" />
+            <h2 className="title-font sm:text-4xl text-6xl font-medium text-white inline-block">
+              Collections{" "}
+              <img
+                className="inline-block align-middle"
+                src="./icons/Vector.svg"
+              />
             </h2>
 
             <p className="mb-8 mt-8 ml-0 text-left leading-relaxed">
@@ -64,7 +68,7 @@ function Home() {
             <img
               className="object-cover object-center rounded"
               alt="hero"
-              src="https://dummyimage.com/720x600"
+              src="./img/Vector 45.png"
             />
           </div>
         </div>
@@ -110,7 +114,7 @@ function Home() {
                     <span className="mr-6">1</span>
                     <img
                       alt="blog"
-                      src="https://dummyimage.com/103x103"
+                      src="./img/Rectangle 264.png"
                       className="w-auto h-8 mb-1 flex-shrink-0 object-cover object-center mr-4"
                     />
                     Start
@@ -124,36 +128,10 @@ function Home() {
 
                 <tr>
                   <td className="px-4 py-3 title-font  flex items-center tracking-wider font-medium text-gray-900 text-sm rounded-tl rounded-bl text-left border-t-[0.5px] border-darkgray">
-                    <span className="mr-6">1</span>
-                    <img
-                      alt="blog"
-                      src="https://dummyimage.com/103x103"
-                      className="w-auto h-8 mb-1 flex-shrink-0 object-cover object-center mr-4"
-                    />
-                    Start
-                  </td>
-                  <td className="border-t-[0.5px] border-darkgray px-4 py-3">
-                    25 Mb/s
-                  </td>
-                  <td className="border-t-[0.5px] border-darkgray px-4 py-3">
-                    25 GB
-                  </td>
-                  <td className="border-t-[0.5px] border-darkgray px-4 py-3 text-lg ">
-                    $24
-                  </td>
-                  <td className="border-t-[0.5px]  border-darkgray px-4 py-3 text-lg ">
-                    $24
-                  </td>
-                  <td className="border-t-[0.5px] border-darkgray px-4 py-3 text-lg ">
-                    $24
-                  </td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-3 title-font  flex items-center tracking-wider font-medium text-gray-900 text-sm rounded-tl rounded-bl text-left border-t-[0.5px] border-darkgray">
                     <span className="mr-6">2</span>
                     <img
                       alt="blog"
-                      src="https://dummyimage.com/103x103"
+                      src="./img/Rectangle 265.png"
                       className="w-auto h-8 mb-1 flex-shrink-0 object-cover object-center mr-4"
                     />
                     Start
@@ -179,7 +157,7 @@ function Home() {
                     <span className="mr-6">3</span>
                     <img
                       alt="blog"
-                      src="https://dummyimage.com/103x103"
+                      src="./img/Rectangle 266.png"
                       className="w-auto h-8 mb-1 flex-shrink-0 object-cover object-center mr-4"
                     />
                     Start
@@ -205,7 +183,7 @@ function Home() {
                     <span className="mr-6">4</span>
                     <img
                       alt="blog"
-                      src="https://dummyimage.com/103x103"
+                      src="./img/Rectangle 267.png"
                       className="w-auto h-8 mb-1 flex-shrink-0 object-cover object-center mr-4"
                     />
                     Start
@@ -231,7 +209,7 @@ function Home() {
                     <span className="mr-6">5</span>
                     <img
                       alt="blog"
-                      src="https://dummyimage.com/103x103"
+                      src="./img/Rectangle 268.png"
                       className="w-auto h-8 mb-1 flex-shrink-0 object-cover object-center mr-4"
                     />
                     Start
@@ -257,7 +235,7 @@ function Home() {
                     <span className="mr-6">6</span>
                     <img
                       alt="blog"
-                      src="https://dummyimage.com/103x103"
+                      src="./img/Rectangle 269.png"
                       className="w-auto h-8 mb-1 flex-shrink-0 object-cover object-center mr-4"
                     />
                     Start
@@ -283,7 +261,7 @@ function Home() {
                     <span className="mr-6">7</span>
                     <img
                       alt="blog"
-                      src="https://dummyimage.com/103x103"
+                      src="./img/Rectangle 270.png"
                       className="w-auto h-8 mb-1 flex-shrink-0 object-cover object-center mr-4"
                     />
                     Start
@@ -309,7 +287,7 @@ function Home() {
                     <span className="mr-6">8</span>
                     <img
                       alt="blog"
-                      src="https://dummyimage.com/103x103"
+                      src="./img/Rectangle 271.png"
                       className="w-auto h-8 mb-1 flex-shrink-0 object-cover object-center mr-4"
                     />
                     Start
@@ -335,7 +313,7 @@ function Home() {
                     <span className="mr-6">9</span>
                     <img
                       alt="blog"
-                      src="https://dummyimage.com/103x103"
+                      src="./img/Rectangle 272.png"
                       className="w-auto h-8 mb-1 flex-shrink-0 object-cover object-center mr-4"
                     />
                     Start
@@ -361,7 +339,7 @@ function Home() {
                     <span className="mr-4">10</span>
                     <img
                       alt="blog"
-                      src="https://dummyimage.com/103x103"
+                      src="./img/Rectangle 273.png"
                       className="w-auto h-8 mb-1 flex-shrink-0 object-cover object-center mr-4"
                     />
                     Start
@@ -384,6 +362,10 @@ function Home() {
                 </tr>
               </tbody>
             </table>
+            <div className="flex mt-8 justify-center">
+              <img className="mr-10 h-10" src="./icons/Left.svg" />
+              <img className="h-10" src="./icons/Right.svg" />
+            </div>
           </div>
         </div>
       </section>
