@@ -105,89 +105,127 @@ function NftDetails() {
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col w-full text-left">
             <h1 className="sm:text-4xl text-3xl font-medium title-font mb-5 text-white">
-              Featured Collections
+              More From This Collections
             </h1>
           </div>
-          <div className="flex flex-wrap -m-4">
-            <div className="p-4 md:w-1/3">
+          <div className="flex flex-wrap -m-4 ">
+            <div className="p-4 md:w-1/4">
               <div className="h-full border-[1px] border-t-blue border-l-blue border-b-purple border-r-purple  rounded-lg overflow-hidden">
                 <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src="./img/c1.png"
+                  className="lg:h-48 md:h-36 w-full p-2  rounded-lg object-fill "
+                  src="./img/collection.png"
                   alt="blog"
                 />
-                <div className="p-6">
-                  <h1 className="title-font text-xl text-center font-medium text-white mb-3">
-                    Being by Parin Heidari{" "}
-                    <img
-                      className="inline-block align-middle"
-                      src="./icons/blue.svg"
-                    />
+                <div>
+                  <h1 className="title-font text-lg text-left p-3  font-medium text-transparent  bg-clip-text bg-gradient-to-r from-purple to-blue mb-3">
+                    NFT Collection Name
+                    <span className="text-white ml-6">#0000</span>
                   </h1>
 
-                  <div className="flex justify-center items-center flex-wrap gap-x-4">
-                    <p className="text-sm text-gray flex-1 text-center">
-                      Floor
-                    </p>
-                    <p className="text-sm text-gray flex-1 text-center">
-                      24H Volume
-                    </p>
+                  <div className="flex  mb-4 text-xs">
+                    <img src="./icons/birth.svg" className="mr-1" />
+                    Min Date:
+                    <span className="text-darkgray ml-2">02.02.2022</span>
+                  </div>
+                  <div className="flex justify-center mb-3 text-darkgray text-xs items-center flex-wrap gap-x-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vestibulum aliquet lorem sit amet mauris ornare varius.
+                  </div>
+                  <div className="flex justify-start items-center flex-wrap gap-x-4">
+                    <div className="text-xl text-white flex items-center">
+                      0.048 ETH{" "}
+                      <img src="./icons/48.svg" className="h-5 ml-2" />
+                    </div>
                   </div>
                   <div className="flex justify-center items-center flex-wrap gap-x-4">
-                    <p className="text-sl text-white flex-1 text-center">
-                      0.048 ETH
-                    </p>
-                    <p className="text-xl text-white flex-1 text-center">
-                      0.048 ETH
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/3">
-              <div className="h-full border-[1px] border-t-blue border-l-blue border-b-purple border-r-purple  rounded-lg overflow-hidden">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src="./img/c2.png"
-                  alt="blog"
-                />
-                <div className="p-6">
-                  <h1 className="title-font text-xl text-center font-medium text-white mb-3">
-                    Monster Party{" "}
-                    <img
-                      className="inline-block align-middle"
-                      src="./icons/blue.svg"
-                    />
-                  </h1>
-
-                  <div className="flex justify-center items-center flex-wrap gap-x-4">
-                    <p className="text-sm text-gray flex-1 text-center">
-                      Floor
-                    </p>
-                    <p className="text-sm text-gray flex-1 text-center">
-                      24H Volume
-                    </p>
-                  </div>
-                  <div className="flex justify-center items-center flex-wrap gap-x-4">
-                    <p className="text-sl text-white flex-1 text-center">
-                      0.048 ETH
-                    </p>
-                    <p className="text-xl text-white flex-1 text-center">
-                      0.048 ETH
+                    <p className="text-xs text-gray flex-1 text-left">
+                      Last sale 0.05 ETH
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="p-4 md:w-1/3">
+            <div className="p-4 md:w-1/4">
               <div className="h-full border-[1px] border-t-blue border-l-blue border-b-purple border-r-purple  rounded-lg overflow-hidden">
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src="./img/c3.png"
                   alt="blog"
                 />
-                <div className="p-6">
+                <div>
+                  <h1 className="title-font text-xl text-center font-medium text-white mb-3">
+                    /// by Snowfro{" "}
+                    <img
+                      className="inline-block align-middle"
+                      src="./icons/blue.svg"
+                    />
+                  </h1>
+
+                  <div className="flex justify-center items-center flex-wrap gap-x-4">
+                    <p className="text-sm text-gray flex-1 text-center">
+                      Floor
+                    </p>
+                    <p className="text-sm text-gray flex-1 text-center">
+                      24H Volume
+                    </p>
+                  </div>
+                  <div className="flex justify-center items-center flex-wrap gap-x-4">
+                    <p className="text-sl text-white flex-1 text-center">
+                      0.048 ETH
+                    </p>
+                    <p className="text-xl text-white flex-1 text-center">
+                      0.048 ETH
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-4 md:w-1/4">
+              <div className="h-full border-[1px] border-t-blue border-l-blue border-b-purple border-r-purple  rounded-lg overflow-hidden">
+                <img
+                  className="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="./img/c3.png"
+                  alt="blog"
+                />
+                <div>
+                  <h1 className="title-font text-xl text-center font-medium text-white mb-3">
+                    /// by Snowfro{" "}
+                    <img
+                      className="inline-block align-middle"
+                      src="./icons/blue.svg"
+                    />
+                  </h1>
+
+                  <div className="flex justify-center items-center flex-wrap gap-x-4">
+                    <p className="text-sm text-gray flex-1 text-center">
+                      Floor
+                    </p>
+                    <p className="text-sm text-gray flex-1 text-center">
+                      24H Volume
+                    </p>
+                  </div>
+                  <div className="flex justify-center items-center flex-wrap gap-x-4">
+                    <p className="text-sl text-white flex-1 text-center">
+                      0.048 ETH
+                    </p>
+                    <p className="text-xl text-white flex-1 text-center">
+                      0.048 ETH
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-4 md:w-1/4">
+              <div className="h-full border-[1px] border-t-blue border-l-blue border-b-purple border-r-purple  rounded-lg overflow-hidden">
+                <img
+                  className="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="./img/c3.png"
+                  alt="blog"
+                />
+                <div>
                   <h1 className="title-font text-xl text-center font-medium text-white mb-3">
                     /// by Snowfro{" "}
                     <img
