@@ -370,6 +370,43 @@ function Home() {
         </div>
       </section>
 
+      <section className=" body-font">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-col w-full text-left">
+            <h1 className="sm:text-4xl text-3xl font-medium title-font mb-5 text-white">
+              Categories
+            </h1>
+          </div>
+
+          <span class="inline-flex space-x-4 text-sm sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start lg:justify-between w-full">
+            <a href="#" class="flex flex-col items-center">
+              <img src="./img/game.png" alt="Game" class="mb-1" />
+              <span>GAME</span>
+            </a>
+            <a href="#" class="flex flex-col items-center">
+              <img src="./img/3d.png" alt="3D Abstract" class="mb-1" />
+              <span>3D ABSTRACT</span>
+            </a>
+            <a href="#" class="flex flex-col items-center">
+              <img src="./img/MUSİC.png" alt="Music" class="mb-1" />
+              <span>MUSIC</span>
+            </a>
+            <a href="#" class="flex flex-col items-center">
+              <img src="./img/ART.png" alt="Art" class="mb-1" />
+              <span>ART</span>
+            </a>
+            <a href="#" class="flex flex-col items-center">
+              <img src="./img/metaverse.png" alt="Metaverse" class="mb-1" />
+              <span>METAVERSE</span>
+            </a>
+            <a href="#" class="flex flex-col items-center">
+              <img src="./img/f.png" alt="PFP" class="mb-1" />
+              <span>PFP</span>
+            </a>
+          </span>
+        </div>
+      </section>
+
       {/* card */}
       <section className="text-gray-400 bg-gray-900 body-font">
         <div className="container px-5 py-24 mx-auto">
