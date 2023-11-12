@@ -17,12 +17,6 @@ function NftDetails() {
               src="./img/nft.png"
             />
 
-            {/* <div className="lg:w-4/5 mx-auto flex border-[0.5px] p-6 border-t-blue rounded-2xl border-l-blue border-b-purple border-r-purple flex-wrap">
-            <img
-              alt="ecommerce"
-              className="lg:w-1/2 w-full lg:h-auto h-20 object-cover object-center rounded"
-              src="./img/nft.png"
-            /> */}
             <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
               <div className="flex items-center text-white text-3xl title-font font-medium mb-1">
                 <span>NFT NAME #0000</span>
