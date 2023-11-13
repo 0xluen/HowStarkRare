@@ -132,6 +132,11 @@ function Search() {
               src="./img/nft.png"
             /> */}
               </div>
+
+              <div className="flex border-b-darkgray border-[0.5px] border-x-0 border-t-0 mb-4 text-xs">
+                <img src="./icons/birth.svg" className="mr-2" />
+                Min Date: <span className="text-darkgray ml-2">02.02.2022</span>
+              </div>
             </section>
           </div>
         </div>

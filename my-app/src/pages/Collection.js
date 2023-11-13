@@ -6,6 +6,102 @@ function Collection() {
   return (
     <div>
       <Header />
+
+      <>
+        <div className="min-h-full">
+          <div className="flex justify-between w-full">
+            <div className="relative w-full lg:flex lg:items-center px-4 py-6 sm:px-6 lg:px-8">
+              <img
+                src="./img/collectionbg.png"
+                className="absolute top-0 left-0 w-full h-full object-cover object-center z-0"
+              />
+
+              <div className="relative z-10">
+                <img
+                  className="w-15 h-15 shadow-lg"
+                  src="./img/collectionprofile.png"
+                />
+
+                <div className="flex flex-col mt-2">
+                  <div className="flex items-center">
+                    <span className="mx-2 text-lg whitespace-nowrap">
+                      SolanaMonkeyBusiness(SMB)
+                    </span>
+                    <img className="align-middle" src="./icons/blue.svg" />
+                  </div>
+
+                  <div>
+                    <span className="mx-2 mt-2 text-sm text-[#D3D3D3] whitespace-nowrap">
+                      5000 Solana inspired generative NFTs
+                    </span>
+                    <div className="flex justify-between">
+                      <span className="flex items-center mx-2 mt-2 text-sm text-[#D3D3D3] whitespace-nowrap">
+                        <img src="./icons/birth.svg" className="mr-2" />
+                        Min Date: 02.02.2022
+                      </span>
+                      <span className="flex items-center mx-2 mt-2 text-sm text-[#D3D3D3] whitespace-nowrap">
+                        Mint Price: {""} 0.05
+                        <img src="./icons/mintprice.svg" className="ml-2" />
+                      </span>
+                      <span className="flex items-center mx-2 mt-2 text-sm text-[#D3D3D3] whitespace-nowrap">
+                        Total Supply: {""} 0.05
+                      </span>
+
+                      <div className="flex justify-end text-center space-x-4">
+                        <span className="flex flex-col  text-sm text-[#D3D3D3]  whitespace-nowrap">
+                          <p className="text-3xl">1500</p>
+                          Items
+                        </span>
+
+                        <span className="flex flex-col text-sm text-[#D3D3D3] whitespace-nowrap">
+                          <p className="text-3xl">1500</p>
+                          Items
+                        </span>
+
+                        <span className="flex flex-col text-sm text-[#D3D3D3] whitespace-nowrap">
+                          <p className="text-3xl">1500</p>
+                          Items
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+      <section className="text-gray-600 body-font">
+        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a className="flex title-font font-medium items-left text-gray-900 mb-4 md:mb-0">
+            <img src="./icons/ion_filter.svg" />
+            <span className="ml-3 text-xs text-center text-darkgray">
+              Tailblocks
+            </span>
+          </a>
+          <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 	flex flex-wrap items-center text-base justify-center">
+            <a className="mr-5 hover:text-gray-900">First Link</a>
+            <a className="mr-5 hover:text-gray-900">Second Link</a>
+            <a className="mr-5 hover:text-gray-900">Third Link</a>
+            <a className="mr-5 hover:text-gray-900">Fourth Link</a>
+          </nav>
+          <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+            Button
+            <svg
+              fill="none"
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              className="w-4 h-4 ml-1"
+              viewBox="0 0 24 24"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </section>
+
       <section className="text-gray-400 bg-gray-900 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col w-full text-left">
