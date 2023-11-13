@@ -4,13 +4,13 @@ import Header from "@/components/Header";
 
 function Collection() {
   return (
-    <div>
+    <>
       <Header />
 
       <>
         <div className="min-h-full">
           <div className="flex justify-between w-full">
-            <div className="relative w-full lg:flex lg:items-center px-4 py-6 sm:px-6 lg:px-8">
+            <div className="relative w-full lg:flex px-4 py-6 sm:px-6 lg:px-8">
               <img
                 src="./img/collectionbg.png"
                 className="absolute top-0 left-0 w-full h-full object-cover object-center z-0"
@@ -46,7 +46,7 @@ function Collection() {
                       <span className="flex items-center mx-2 mt-2 text-sm text-[#D3D3D3] whitespace-nowrap">
                         Total Supply: {""} 0.05
                       </span>
-
+                      {/*
                       <div className="flex justify-end text-center space-x-4">
                         <span className="flex flex-col  text-sm text-[#D3D3D3]  whitespace-nowrap">
                           <p className="text-3xl">1500</p>
@@ -62,7 +62,7 @@ function Collection() {
                           <p className="text-3xl">1500</p>
                           Items
                         </span>
-                      </div>
+                      </div>*/}
                     </div>
                   </div>
                 </div>
@@ -71,34 +71,30 @@ function Collection() {
           </div>
         </div>
       </>
+
       <section className="text-gray-600 body-font">
-        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a className="flex title-font font-medium items-left text-gray-900 mb-4 md:mb-0">
-            <img src="./icons/ion_filter.svg" />
-            <span className="ml-3 text-xs text-center text-darkgray">
-              Tailblocks
-            </span>
-          </a>
-          <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 	flex flex-wrap items-center text-base justify-center">
-            <a className="mr-5 hover:text-gray-900">First Link</a>
-            <a className="mr-5 hover:text-gray-900">Second Link</a>
-            <a className="mr-5 hover:text-gray-900">Third Link</a>
-            <a className="mr-5 hover:text-gray-900">Fourth Link</a>
-          </nav>
-          <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-            Button
-            <svg
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              className="w-4 h-4 ml-1"
-              viewBox="0 0 24 24"
-            >
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-          </button>
+        <div className="flex flex-wrap md:flex-nowrap container mx-auto p-5 flex-col md:flex-row items-center">
+          <img src="./icons/ion_filter.svg" />
+          <span class="ml-3 text-xs text-center text-darkgray">
+            3,400 results
+          </span>{" "}
+          <input
+            type="search"
+            className="relative ml-10 block w-full flex-auto border rounded-[30px] border-solid border-t-blue border-l-blue border-b-purple border-r-purple bg-black  bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+            placeholder="Search"
+            aria-label="Search"
+            aria-describedby="button-addon2"
+          />{" "}
+          <select className="select ml-10 rounded-[30px] border-t-blue border-l-blue border-b-purple border-r-purple bg-black ">
+            <option disabled selected>
+              Pick one
+            </option>
+            <option>Star Wars</option>
+            <option>Harry Potter</option>
+            <option>Lord of the Rings</option>
+            <option>Planet of the Apes</option>
+            <option>Star Trek</option>
+          </select>
         </div>
       </section>
 
@@ -110,7 +106,7 @@ function Collection() {
             </h1>
           </div>
           <div className="flex flex-wrap -m-4 ">
-            <div className="p-4 md:w-1/4">
+            <div className="p-4 md:w-1/4 ">
               <div className="h-full border-[1px] border-t-blue border-l-blue border-b-purple border-r-purple  rounded-lg overflow-hidden">
                 <img
                   className="lg:h-48 md:h-36 w-full p-2  rounded-lg object-fill "
@@ -675,7 +671,7 @@ function Collection() {
       </section>
 
       <Footer />
-    </div>
+    </>
   );
 }
 
