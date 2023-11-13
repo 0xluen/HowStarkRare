@@ -1,12 +1,12 @@
 import React from "react";
-import Header from "@/components/Header";
+
 import Footer from "@/components/Footer";
-import Image from "next/image";
+import Nav from "@/components/Nav";
 
 function Home() {
   return (
     <>
-      <Header />
+      <Nav />
 
       {/*1. kısım  */}
       <section className=" text-gray body-font">

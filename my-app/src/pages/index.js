@@ -1,11 +1,14 @@
 import React from "react";
-import Header from "@/components/Header";
+
 import Footer from "@/components/Footer";
+
+import { ImageResponse } from "next/server";
+import Nav from "@/components/Nav";
 
 function index() {
   return (
     <div>
-      <Header />
+      <Nav />
 
       <Footer />
     </div>

@@ -1,12 +1,12 @@
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import { ApiError } from "next/dist/server/api-utils";
+import Nav from "@/components/Nav";
+
 import React from "react";
 
 function NftDetails() {
   return (
     <>
-      <Header />
+      <Nav />
 
       <section className="text-gray-400 bg-gray-900 body-font overflow-hidden">
         <div class="container px-5 py-24 mx-auto">

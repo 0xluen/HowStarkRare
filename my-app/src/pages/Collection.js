@@ -1,22 +1,21 @@
 import React from "react";
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Nav from "@/components/Nav";
 
 function Collection() {
   return (
     <>
-      <Header />
-
+      <Nav />
       <>
         <div className="min-h-full">
           <div className="flex justify-between w-full">
             <div className="relative w-full lg:flex px-4 py-6 sm:px-6 lg:px-8">
               <img
                 src="./img/collectionbg.png"
-                className="absolute top-0 left-0 w-full h-full object-cover object-center z-0"
+                className="absolute top-0 left-0  w-full h-full object-cover object-center z-0"
               />
 
-              <div className="relative z-10">
+              <div className="relative ml-5 z-10">
                 <img
                   className="w-15 h-15 shadow-lg"
                   src="./img/collectionprofile.png"
