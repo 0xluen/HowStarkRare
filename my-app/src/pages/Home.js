@@ -14,7 +14,7 @@ function Home() {
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 className="title-font sm:text-4xl text-6xl mb-4 font-medium text-white">
               Discover Rare {""}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple to-blue">
+              <span className="text-transparent    bg-clip-text bg-gradient-to-r from-purple to-blue">
                 NFTs
               </span>
             </h1>
@@ -32,43 +32,42 @@ function Home() {
               lacinia luctus elementum
             </p>
             <div className=" flex w-full md:justify-start items-end md:w-full lg:w-full xl:w-1/2">
-              <button class=" bg-gradient-to-r from-purple to-blue   hover:to-blue hover:from-darkpurple text-darkpurple bg-indigo-500 border-0 py-3 px-20 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+              <button class=" bg-gradient-to-r from-purple to-blue   hover:to-blue hover:from-darkpurple text-darkpurple bg-indigo-500 border-0 py-3 px-20 rounded text-lg">
                 EXPLORE
               </button>
             </div>
-
-            <div className="flex lg:flex-row md:flex-col">
-              <button className=" flex flex-col py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-gray-200 focus:outline-none">
+            <div className="flex lg:flex-row md:flex-col mt-5 ml-0 items-start justify-start">
+              <div className="flex flex-col items-center md:ml-0 md:mt-4 mt-0 lg:mt-0">
                 <h2 className="title-font font-medium text-3xl text-white">
                   1500K
                 </h2>
-                <p className="leading-relaxed border-b-[0.5px] border-blue ">
+                <p className="leading-relaxed border-b-[0.5px] border-blue">
                   Collections
                 </p>
-              </button>
-              <button className=" flex flex-col py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-gray-200 focus:outline-none">
+              </div>
+              <div className="flex flex-col items-center lg:ml-6 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0">
                 <h2 className="title-font font-medium text-3xl text-white">
                   2.2M
                 </h2>
-                <p className="leading-relaxed border-b-[0.5px] border-blue ">
+                <p className="leading-relaxed border-b-[0.5px] border-blue">
                   Items
                 </p>
-              </button>
-              <button className=" flex flex-col py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-gray-200 focus:outline-none">
+              </div>
+              <div className="flex flex-col items-center lg:ml-6 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0">
                 <h2 className="title-font font-medium text-3xl text-white">
                   22K
                 </h2>
-                <p className="leading-relaxed border-b-[0.25px] border-blue ">
+                <p className="leading-relaxed border-b-[0.25px] border-blue">
                   Owners
                 </p>
-              </button>
+              </div>
             </div>
           </div>
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
             <img
               className="object-cover object-center rounded"
               alt="hero"
-              src="./img/Vector 45.png"
+              src="./img/homeb2.png"
             />
           </div>
         </div>
@@ -77,7 +76,7 @@ function Home() {
       {/* tablo */}
       <section className="text-gray body-font">
         <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col w-full text-left">
+          <div className="flex flex-col w-full text-center">
             <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-white">
               Top 50 Collections
             </h1>
@@ -380,27 +379,24 @@ function Home() {
 
           <span class="inline-flex space-x-4 text-sm sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start lg:justify-between w-full">
             <a href="#" class="flex flex-col items-center">
-              <img src="./img/game.png" alt="Game" class="mb-1" />
+              <img src="./img/gamebg.png" alt="Game" class="mb-1" />
               <span>GAME</span>
             </a>
+
             <a href="#" class="flex flex-col items-center">
-              <img src="./img/3d.png" alt="3D Abstract" class="mb-1" />
-              <span>3D ABSTRACT</span>
-            </a>
-            <a href="#" class="flex flex-col items-center">
-              <img src="./img/MUSİC.png" alt="Music" class="mb-1" />
+              <img src="./img/musichome.png" alt="Music" class="mb-1" />
               <span>MUSIC</span>
             </a>
             <a href="#" class="flex flex-col items-center">
-              <img src="./img/ART.png" alt="Art" class="mb-1" />
+              <img src="./img/artbg.png" alt="Art" class="mb-1" />
               <span>ART</span>
             </a>
             <a href="#" class="flex flex-col items-center">
-              <img src="./img/metaverse.png" alt="Metaverse" class="mb-1" />
+              <img src="./img/metaversebg.png" alt="Metaverse" class="mb-1" />
               <span>METAVERSE</span>
             </a>
             <a href="#" class="flex flex-col items-center">
-              <img src="./img/f.png" alt="PFP" class="mb-1" />
+              <img src="./img/pfbg.png" alt="PFP" class="mb-1" />
               <span>PFP</span>
             </a>
           </span>

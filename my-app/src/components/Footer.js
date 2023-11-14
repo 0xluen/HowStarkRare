@@ -3,31 +3,31 @@ import React from "react";
 function Footer() {
   return (
     <footer className="text-gray body-font">
-      <div className="container px-5 py-8 mx-auto flex flex-col md:flex-row items-center justify-between">
+      <div className="container px-5 py-8 mx-auto flex flex-col items-center justify-between">
         {/* <!-- Logo and Brand Name --> */}
-        <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray">
-          <img className="h-12" src="./img/HowStark.png" />
+        <a className="flex title-font font-medium items-center justify-center text-gray ">
+          <img className="h-12" src="./img/HowStark.png" alt="HowStark Logo" />
         </a>
 
         {/* <!-- Social Media Links --> */}
-        <div className="inline-flex space-x-4 text-sm justify-center md:justify-start flex-grow">
-          <a className="text-gray inline-flex items-center">
-            <img src="./img/x.png" className="mr-2" /> Twitter
+        <div className="flex space-x-10 text-sm my-8 justify-between">
+          <a className="text-gray flex items-center">
+            <img src="./img/x.png" className="mr-2" alt="Twitter" />
           </a>
-          <a className="text-gray-400 inline-flex items-center">
-            <img src="./img/telegram.png" className="mr-2" /> Telegram
+          <a className="text-gray-400 flex items-center">
+            <img src="./img/telegram.png" className="mr-2" alt="Telegram" />
           </a>
-          <a className="text-gray-400 inline-flex items-center">
-            <img src="./img/instagram.png" className="mr-2" /> Instagram
+          <a className="text-gray-400 flex items-center">
+            <img src="./img/instagram.png" className="mr-2" alt="Instagram" />
           </a>
-          <a className="text-gray-400 inline-flex items-center">
-            <img src="./icons/dc.svg" className="mr-2" /> Discord
+          <a className="text-gray-400 flex items-center">
+            <img src="./icons/dc.svg" className="mr-2" alt="Discord" />
           </a>
         </div>
 
         {/* <!-- Copyright Notice --> */}
-        <p className="text-sm text-footergray md:ml-4 md:pl-4 md:py-2 mt-4 md:mt-0">
-          2023 HowStarkRare All rights reserved
+        <p className="text-sm text-footergray">
+          © 2023 HowStarkRare All rights reserved
           <a
             href="#"
             className="text-footergray ml-1"

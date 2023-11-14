@@ -82,7 +82,7 @@ function NftDetails() {
                   <span>0.048ETH</span>
                   <img src="./icons/48.svg" className="ml-2" />
                 </div>
-                <button className="flex m-auto bg-gradient-to-r from-purple to-blue hover:to-blue hover:from-darkpurple text-darkpurple border-0 py-3 px-14 focus:outline-none rounded-3xl">
+                <button className="flex m-auto bg-gradient-to-r from-purple to-blue hover:to-blue hover:from-darkpurple text-darkpurple border-0 py-3 px-7 focus:outline-none rounded-3xl sm:px-14 sm:py-3">
                   CLAIM
                 </button>
               </div>
@@ -91,10 +91,13 @@ function NftDetails() {
             <div className="flex items-center sm:text-sm mt-7 space-x-3">
               <div className="flex items-center title-font text-2xl font-medium text-white mb-3 mr-6">
                 <img src="./img/details.png" className="rounded-full" />
-                <span className="mx-2 whitespace-nowrap">
+                <span className="mx-2 whitespace-nowrap hidden sm:flex ">
                   SolanaMonkeyBusiness(SMB)
                 </span>
-                <img className="align-middle" src="./icons/blue.svg" />
+                <img
+                  className="align-middle hidden sm:flex"
+                  src="./icons/blue.svg"
+                />
               </div>
               <img src="./img/like.png" className="h-10 mb-4 " />
             </div>
@@ -129,23 +132,23 @@ function NftDetails() {
                     <span className="text-white ml-6">#0000</span>
                   </h1>
 
-                  <div className="flex  mb-4 text-xs">
+                  <div className="flex ml-3 mb-4 text-xs">
                     <img src="./icons/birth.svg" className="mr-1" />
                     Min Date:
                     <span className="text-darkgray ml-2">02.02.2022</span>
                   </div>
-                  <div className="flex justify-center mb-3 text-darkgray text-xs items-center flex-wrap gap-x-4">
+                  <div className="flex justify-center mb-3 ml-3 text-darkgray text-xs items-center flex-wrap gap-x-4">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Vestibulum aliquet lorem sit amet mauris ornare varius.
                   </div>
-                  <div className="flex justify-start items-center flex-wrap gap-x-4">
+                  <div className="flex justify-start items-center ml-3 flex-wrap gap-x-4">
                     <div className="text-xl text-white flex items-center">
                       0.048 ETH{" "}
                       <img src="./icons/48.svg" className="h-5 ml-2" />
                     </div>
                   </div>
                   <div className="flex justify-center p-2 border-b-green border-[0.5px] border-x-0 border-t-0 items-center text-[#D3D3D3] flex-wrap gap-x-4">
-                    <p className="text-xs  flex-1 text-left">
+                    <p className="text-xs ml-3 flex-1 text-left">
                       Mint Price: <span className="text-gray">0.05</span>
                     </p>
                     <p className="text-xs  flex-1 text-left">
