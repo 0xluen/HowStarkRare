@@ -1,6 +1,15 @@
 import React from "react";
-
+import { connect, disconnect } from "get-starknet"
+import { useState } from "react";
 function Nav() {
+
+  const [buttonStatus, setStatus] = useState(true)
+
+  async function handleDisconnect() {
+    await disconnect()
+    setStatus(true)
+}
+
   return (
     <div>
       <header className="text-gray-600 body-font">
@@ -36,13 +45,35 @@ function Nav() {
           <button className="inline-flex md:hidden lg:flex  items-center rounded-[30px]  px-8 py-2 focus:outline-none  text-base mt-4 md:mt-0 bg-gradient-to-r from-purple to-blue   hover:to-blue hover:from-darkpurple text-darkpurple hover:text-gray mr-2">
             Searchs
           </button>
-          <button className="inline-flex px-8 py-2 text-center text-xs  items-center border border-1 rounded-[30px]   focus:outline-none   border-t-blue border-l-blue border-b-purple border-r-purple bg-black text-white font-bold mt-4 md:mt-0 hover:to-blue hover:from-darkpurple hover:text-gray  ">
-            Connect Wallet{" "}
-            <img
-              src="./img/Money Wallet.png"
-              className="h-5 object-center ml-2"
-            />
-          </button>
+           { buttonStatus == true ?
+           <button onClick={
+            async () => {
+                try {
+                    const wallet = await connect({
+                        include: ["braavos","argentX"],/// ,"argentX"
+                        
+                    });
+                    if (wallet) {
+                        await wallet.enable({ showModal: true });
+                        setStatus(false)
+                    }
+                } catch (err) {
+                    console.error(err);
+                }
+            }
+         } className="inline-flex px-8 py-2 text-center text-xs  items-center border border-1 rounded-[30px]   focus:outline-none   border-t-blue border-l-blue border-b-purple border-r-purple bg-black text-white font-bold mt-4 md:mt-0 hover:to-blue hover:from-darkpurple hover:text-gray  ">
+           Connect Wallet
+           <img
+             src="./img/Money Wallet.png"
+             className="h-5 object-center ml-2"
+           />
+         </button>
+         :<button 
+         className="inline-flex px-8 py-2 text-center text-xs  items-center border border-1 rounded-[30px]   focus:outline-none   border-t-blue border-l-blue border-b-purple border-r-purple bg-black text-white font-bold mt-4 md:mt-0 hover:to-blue hover:from-darkpurple hover:text-gray  " 
+         onClick={() => handleDisconnect()}>
+          Disconnect
+         </button>}
+         
         </div>
       </header>
     </div>
