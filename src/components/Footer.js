@@ -14,12 +14,11 @@ function Footer() {
           <a className="text-gray flex items-center">
             <img src="./img/x.png" className="mr-2" alt="Twitter" />
           </a>
-          <a className="text-gray-400 flex items-center">
+          
+        {/*  <a className="text-gray-400 flex items-center">
             <img src="./img/telegram.png" className="mr-2" alt="Telegram" />
-          </a>
-          <a className="text-gray-400 flex items-center">
-            <img src="./img/instagram.png" className="mr-2" alt="Instagram" />
-          </a>
+        </a>*/}
+       
           <a className="text-gray-400 flex items-center">
             <img src="./icons/dc.svg" className="mr-2" alt="Discord" />
           </a>
@@ -34,7 +33,7 @@ function Footer() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            @ozgeboztass
+            StarknetBunny
           </a>
         </p>
       </div>
