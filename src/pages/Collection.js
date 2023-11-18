@@ -3,6 +3,8 @@ import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 import { useRouter } from 'next/router';
 import axios from "axios";
+import Link from "next/link";
+
 function Collection() {
   const router = useRouter();
   const [data,setData] = useState([])
@@ -150,7 +152,7 @@ function Collection() {
     {/** Koleksiyon öğesi */}
     {items.map((item,index)=>{
       return(
-        <div className="p-3 md:w-1/4">
+        <div key={index} className="p-3 md:w-1/4">
       <div className="h-full border-[1px] border-t-blue border-l-blue border-b-purple border-r-purple rounded-lg overflow-hidden relative">
         <img
           className="lg:h-48 md:h-36 w-full p-2 rounded-lg object-fill"

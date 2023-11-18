@@ -1,6 +1,7 @@
 import React from "react";
 import { connect, disconnect } from "get-starknet"
 import { useState } from "react";
+import Link from "next/link";
 function Nav() {
 
   const [buttonStatus, setStatus] = useState(true)
@@ -15,7 +16,7 @@ function Nav() {
       <header className="text-gray-600 body-font">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <div className="flex title-font font-medium items-center  mb-4 md:mb-0">
-           <a href="/"> <img className="h-12" src="./img/HowStark.png" /></a>
+           <Link href="/"> <img className="h-12" src="./img/HowStark.png" /></Link>
           </div>
           <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4  	flex flex-wrap items-center text-base justify-center">
            { /* <a

@@ -1,9 +1,10 @@
+'use client'
 import React, { useEffect, useState } from "react";
-
+import Link from "next/link";
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 import axios from "axios";
-function index() {
+function Index() {
   const [nfts,setNfts] = useState([])
   const [project , setProjects] = useState([])
 
@@ -131,7 +132,7 @@ function index() {
 
        {nfts.map((item,index)=>{
         return(
-          <tr>
+          <tr key={index}>
           <td className="px-4 py-3 title-font  flex items-center tracking-wider font-medium text-gray-900 text-sm rounded-tl rounded-bl text-left border-t-[0.5px] border-darkgray">
             <span className="mr-6">{index + 1 }</span>
             <img
@@ -139,7 +140,7 @@ function index() {
               src={item.data.image}
               className="w-auto h-8 mb-1 flex-shrink-0 object-cover object-center mr-4"
             />
-           <a href={"/Collection"+"?address="+item.data.address} target="_blank">{item.data.name}</a>
+           <Link href={"/Collection"+"?address="+item.data.address} target="_blank">{item.data.name}</Link>
           </td>
           <td className="border-t-[0.5px]  border-darkgray px-4 py-3">
           {Number(item.data.floorPrice).toFixed(6)} ETH
@@ -171,22 +172,22 @@ function index() {
           </div>
 
           <span class="inline-flex space-x-4 text-sm sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start lg:justify-between w-full">
-            <a href="#" class="flex flex-col items-center">
+          <Link href="#" class="flex flex-col items-center">
               <img src="./img/gamebg.png" alt="Game" class="mb-1" />
               <span style={{color:"white"}}>GAME</span>
-            </a>
-            <a href="#" class="flex flex-col items-center">
+            </Link>
+            <Link href="#" class="flex flex-col items-center">
               <img src="./img/artbg.png" alt="Art" class="mb-1" />
               <span  style={{color:"white"}}>ART</span>
-            </a>
-            <a href="#" class="flex flex-col items-center">
+            </Link>
+            <Link href="#" class="flex flex-col items-center">
               <img src="./img/metaversebg.png" alt="Metaverse" class="mb-1" />
               <span style={{color:"white"}}>METAVERSE</span>
-            </a>
-            <a href="#" class="flex flex-col items-center">
+            </Link>
+            <Link href="#" class="flex flex-col items-center">
               <img src="./img/pfbg.png" alt="PFP" class="mb-1" />
               <span style={{color:"white"}}>PFP</span>
-            </a>
+            </Link>
           </span>
         </div>
       </section>
@@ -203,7 +204,7 @@ function index() {
           {project.map((item,index)=>{
          
           return(
-            <div className="p-4 md:w-1/3">
+            <div key={index} className="p-4 md:w-1/3">
             <div className="h-full border-[1px] border-t-blue border-l-blue border-b-purple border-r-purple  rounded-lg overflow-hidden">
               <img
                 className="lg:h-48 md:h-36 w-full object-cover object-center"
@@ -212,7 +213,7 @@ function index() {
               />
               <div className="p-6">
                 <h1 className="title-font text-xl text-center font-medium text-white mb-3">
-                <a href={"/Collection"+"?address="+item.address} target="_blank">{item.name}</a>
+                <Link href={"/Collection"+"?address="+item.address} target="_blank">{item.name}</Link>
                   <img
                     className="inline-block align-middle"
                     src="./icons/blue.svg"
@@ -502,4 +503,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;
