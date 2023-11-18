@@ -16,7 +16,7 @@ function Collection() {
     }     
   }
 
- 
+ console.log(items);
 
   const collection = async()=>{
     const requestBody = {
@@ -76,7 +76,7 @@ function Collection() {
 
                   <div>
                     <span className="mx-2 mt-2 text-sm text-[#D3D3D3] whitespace-nowrap">
-                      {data.description}
+                      {data.description}...
                     </span>
                     <div className="flex justify-between">
                       <span className="flex items-center mx-2 mt-2 text-sm text-[#D3D3D3] whitespace-nowrap">
@@ -156,7 +156,7 @@ function Collection() {
       <div className="h-full border-[1px] border-t-blue border-l-blue border-b-purple border-r-purple rounded-lg overflow-hidden relative">
         <img
           className="lg:h-48 md:h-36 w-full p-2 rounded-lg object-fill"
-          src={item.metadata.image}
+          src={item.metadata.selfHostedImage}
           alt="blog"
           style={{width:'100%' ,height:'auto'}}
         />
