@@ -11,7 +11,7 @@ function Footer() {
 
         {/* <!-- Social Media Links --> */}
         <div className="flex space-x-10 text-sm my-8 justify-between">
-          <a className="text-gray flex items-center">
+          <a className="text-gray flex items-center" href="https://twitter.com/StarknetBunny">
             <img src="./img/x.png" className="mr-2" alt="Twitter" />
           </a>
           
