@@ -75,7 +75,7 @@ function Collection() {
                   </div>
 
                   <div>
-                    <span className="mx-2 mt-2 text-sm text-[#D3D3D3] whitespace-nowrap">
+                    <span className="mx-2 mt-2 text-sm text-[#D3D3D3] whitespace-nowrap hidden sm:block">
                       {data.description}...
                     </span>
                     <div className="flex justify-between">
@@ -154,12 +154,14 @@ function Collection() {
       return(
         <div key={index} className="p-3 md:w-1/4">
       <div className="h-full border-[1px] border-t-blue border-l-blue border-b-purple border-r-purple rounded-lg overflow-hidden relative">
-        <img
+      <center>
+      <img
           className="lg:h-48 md:h-36 w-full p-2 rounded-lg object-fill"
           src={item.metadata.selfHostedImage}
           alt="blog"
-          style={{width:'100%' ,height:'auto'}}
+          style={{width:'300px' ,height:'300px',borderRadius:'16px'}}
         />
+      </center>
         <img
           src="./img/like.png"
           className="h-10 absolute top-0 right-0 m-4"

@@ -140,7 +140,7 @@ function Index() {
               src={item.data.image}
               className="w-auto h-8 mb-1 flex-shrink-0 object-cover object-center mr-4"
             />
-           <Link href={"/Collection"+"?address="+item.data.address} target="_blank">{item.data.name}</Link>
+           <Link href={"/Collection"+"?address="+item.data.address}  >{item.data.name}</Link>
           </td>
           <td className="border-t-[0.5px]  border-darkgray px-4 py-3">
           {Number(item.data.floorPrice).toFixed(6)} ETH
@@ -213,7 +213,7 @@ function Index() {
               />
               <div className="p-6">
                 <h1 className="title-font text-xl text-center font-medium text-white mb-3">
-                <Link href={"/Collection"+"?address="+item.address} target="_blank">{item.name}</Link>
+                <Link href={"/Collection"+"?address="+item.address}  >{item.name}</Link>
                   <img
                     className="inline-block align-middle"
                     src="./icons/blue.svg"
