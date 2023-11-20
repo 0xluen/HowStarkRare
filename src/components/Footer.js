@@ -19,7 +19,7 @@ function Footer() {
             <img src="./img/telegram.png" className="mr-2" alt="Telegram" />
         </a>*/}
        
-          <a className="text-gray-400 flex items-center">
+          <a className="text-gray-400 flex items-center" href="https://discord.gg/SbeBUhKK">
             <img src="./icons/dc.svg" className="mr-2" alt="Discord" />
           </a>
         </div>
