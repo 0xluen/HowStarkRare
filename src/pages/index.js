@@ -17,7 +17,6 @@ function Index() {
     const res = await axios.get(
       "https://api.pyramid.market/api/collection/trending?sort=volume&duration=DAY_7"
     );
-    console.log(res.data.data);
     setNfts(res.data.data)
   }
   
@@ -25,7 +24,6 @@ function Index() {
     const res = await axios.get(
       "https://api.pyramid.market/api/collection/intro"
     );
-    console.log(res.data.data);
     setProjects(res.data.data)
   }
   useEffect(()=>{

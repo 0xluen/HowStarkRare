@@ -1,15 +1,32 @@
 import React from "react";
 import { connect, disconnect } from "get-starknet"
-import { useState } from "react";
+import { useState,useEffect } from "react";
+import axios from "axios";
 import Link from "next/link";
 function Nav() {
 
+  const [walletAddr,setWallet] = useState("")
+  let [data, setData] = useState([])
+
   const [buttonStatus, setStatus] = useState(true)
+  let [controlCount, setCount ] = useState(0)
 
   async function handleDisconnect() {
     await disconnect()
     setStatus(true)
-}
+  }
+
+  const controller = async(address)=>{
+    const res = await axios.get(`/api/stake?wallet=`+address);
+    setData(res.data)
+    setCount(controlCount+1)
+   }
+
+
+useEffect( ()=>{
+    controller(walletAddr.account?.address);
+},[walletAddr])
+
 
   return (
     <div>
@@ -41,7 +58,7 @@ function Nav() {
       { /*   <button className="inline-flex md:hidden lg:flex  items-center rounded-[30px]  px-8 py-2 focus:outline-none  text-base mt-4 md:mt-0 bg-gradient-to-r from-purple to-blue   hover:to-blue hover:from-darkpurple text-darkpurple hover:text-gray mr-2">
             Searchs
   </button>*/}
-           {/* buttonStatus == true ?
+           { buttonStatus == true ?
            <button onClick={
             async () => {
                 try {
@@ -49,7 +66,11 @@ function Nav() {
                         include: ["braavos","argentX"],/// ,"argentX"
                         
                     });
+                   
+
                     if (wallet) {
+                        setWallet(wallet)
+                        controller(wallet?.account?.address);
                         await wallet.enable({ showModal: true });
                         setStatus(false)
                     }
@@ -67,8 +88,8 @@ function Nav() {
          :<button 
          className="inline-flex px-8 py-2 text-center text-xs  items-center border border-1 rounded-[30px]   focus:outline-none   border-t-blue border-l-blue border-b-purple border-r-purple bg-black text-white font-bold mt-4 md:mt-0 hover:to-blue hover:from-darkpurple hover:text-gray  " 
          onClick={() => handleDisconnect()}>
-          Disconnect
-         </button>*/}
+          {data.length > 0 ? data[0].point + ' 🥕' : 'Disconnect ' }
+         </button>}
          
         </div>
       </header>
