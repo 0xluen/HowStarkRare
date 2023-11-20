@@ -10,7 +10,7 @@ function Nav() {
 
   const [buttonStatus, setStatus] = useState(true)
   let [controlCount, setCount ] = useState(0)
-
+  console.log(data);
   async function handleDisconnect() {
     await disconnect()
     setStatus(true)
