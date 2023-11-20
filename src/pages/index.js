@@ -55,7 +55,7 @@ function Index() {
             </h2>
 
             <p className="mb-8 mt-8 ml-0 text-left leading-relaxed">
-            Discover the rarities of StarkNet's NFT collectibles
+            Discover the rarities of Starknet NFT collectibles
             </p>
             <div className=" flex w-full md:justify-start items-end md:w-full lg:w-full xl:w-1/2">
               <button onClick={twitter} class=" bg-gradient-to-r from-purple to-blue   hover:to-blue hover:from-darkpurple text-darkpurple bg-indigo-500 border-0 py-3 px-20 rounded text-lg">
