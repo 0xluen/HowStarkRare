@@ -7,9 +7,21 @@ import Link from "next/link";
 import Head from "next/head";
 
 function Collection() {
+
   const router = useRouter();
   const [data,setData] = useState([])
   const [items,setItems] = useState([])
+  const [bunny,setBunny] = useState([])
+
+  console.log(bunny);
+
+  const getBunny =async ()=>{
+    if (router.query.address) {
+      const res = await axios.get("https://api.howstarkrare.info");
+      setBunny(res.data)
+    }     
+  }
+
   const getProjects =async ()=>{
     if (router.query.address) {
       const res = await axios.get("https://api.pyramid.market/api/collection/" + router.query.address);
@@ -47,6 +59,7 @@ function Collection() {
   useEffect(()=>{
     collection();
     getProjects();
+    getBunny();
   },[router.query.address])
   return (
     <>
@@ -178,6 +191,8 @@ function Collection() {
           </h1>
           <div className="flex justify-center mb-3 text-darkgray text-xs items-center flex-wrap gap-x-4 text-center">
           Created at : {(item.createdAt).substring(0, 10)}   </div>
+          { item.collectionAddress=="0x69573524616d02f22bfcf0851413ba8feeb3d43f7f537362f6036d954e3a6ad" && <div className="flex justify-center mb-3 text-darkgray text-xs items-center flex-wrap gap-x-4 text-center">
+          Rarity :{bunny.find(x => Number(x.id) === Number(item.tokenId))?.rank} </div>}
           <div className="flex justify-start items-center flex-wrap gap-x-4 border-[5.5px]">
             <div className="text-xl text-white flex items-center">
              {item.orders.listing && item.orders.listing.price} {item.orders.listing && 'ETH'}
