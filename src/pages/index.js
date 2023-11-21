@@ -159,7 +159,9 @@ function Index() {
         </div>
       </section>
 
-      <section className=" body-font">
+      
+
+      {/* <section className=" body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col w-full text-left">
             <h1 className="sm:text-4xl text-3xl font-medium title-font mb-5 text-white">
@@ -186,9 +188,8 @@ function Index() {
             </Link>
           </span>
         </div>
-      </section>
-
-      {/* card */}
+      </section> */}
+      
       <section className="text-gray-400 bg-gray-900 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col w-full text-left">
