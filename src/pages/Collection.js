@@ -4,6 +4,7 @@ import Nav from "@/components/Nav";
 import { useRouter } from 'next/router';
 import axios from "axios";
 import Link from "next/link";
+import Head from "next/head";
 
 function Collection() {
   const router = useRouter();
@@ -49,6 +50,9 @@ function Collection() {
   },[router.query.address])
   return (
     <>
+     <Head>
+    <title>HowStarkRare</title>
+    </Head>
       <Nav />
       <>
         <div className="min-h-full">

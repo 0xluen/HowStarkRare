@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Head from "next/head";
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 import axios from "axios";
@@ -32,6 +33,9 @@ function Index() {
   },[])
   return (
     <>
+    <Head>
+    <title>HowStarkRare</title>
+    </Head>
       <Nav />
 
       {/*1. kısım  */}
@@ -189,7 +193,7 @@ function Index() {
           </span>
         </div>
       </section> */}
-      
+
       <section className="text-gray-400 bg-gray-900 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col w-full text-left">
