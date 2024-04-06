@@ -9,6 +9,8 @@ function Index() {
   const [nfts,setNfts] = useState([])
   const [project , setProjects] = useState([])
 
+
+
   const twitter=()=>{
     const url = "https://twitter.com/StarknetBunny";
     window.open(url, "_blank");
@@ -141,16 +143,16 @@ function Index() {
             <span className="mr-6">{index + 1 }</span>
             <img
               alt="blog"
-              src={item.data.image}
+              src={item.image}
               className="w-auto h-8 mb-1 flex-shrink-0 object-cover object-center mr-4"
             />
-           <Link href={"/Collection"+"?address="+item.data.address}  >{item.data.name}</Link>
+           <Link href={"/Collection"+"?address="+item.address}  >{item.name}</Link>
           </td>
           <td className="border-t-[0.5px]  border-darkgray px-4 py-3">
-          {Number(item.data.floorPrice).toFixed(6)} ETH
+          {Number(item.floorPrice).toFixed(6)} ETH
           </td>
           <td className="border-t-[0.5px]  border-darkgray px-4 py-3">
-          {Number(item.data.collectionVolume).toFixed(4)} ETH
+          {Number(item.collectionVolume).toFixed(4)} ETH
           </td>
          
         </tr>
